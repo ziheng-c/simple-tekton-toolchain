@@ -1,8 +1,8 @@
 ---
 inputs:
 - type: git
-  branch: master
-  service: ${GIT_REPO}
+  tag: 0.10
+  service: ${GREENWELL_GIT_REPO}
   path: .tekton
 triggers:
 - type: git
