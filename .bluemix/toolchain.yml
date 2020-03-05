@@ -30,7 +30,7 @@ services:
     parameters:
       repo_name: 'greenwell-tekton'
       source_repo_url: 'https://github.com/ziheng-c/greenwell-tekton'
-      type: existing
+      type: link
       has_issues: true
       enable_traceability: true
   build:
