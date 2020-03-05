@@ -2,7 +2,7 @@
 inputs:
 - type: git
   tag: 0.10
-  service: ${GREENWELL_GIT_REPO}
+  service: ${GIT_REPO}
   path: .tekton
 triggers:
 - type: git
