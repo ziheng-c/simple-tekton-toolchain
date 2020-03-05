@@ -28,9 +28,9 @@ services:
   repo:
     service_id: githubpublic
     parameters:
-      repo_name: '{{toolchain.name}}'
+      repo_name: 'greenwell-tekton'
       source_repo_url: 'https://github.com/ziheng-c/greenwell-tekton'
-      type: clone
+      type: existing
       has_issues: true
       enable_traceability: true
   build:
@@ -56,6 +56,8 @@ services:
           REPOSITORY: '{{services.repo.parameters.source_repo_url}}'
           REVISION: master
         execute: true
+  webide:
+    service_id: orion
 form:
   pipeline:
     parameters:
