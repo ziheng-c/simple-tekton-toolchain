@@ -1,7 +1,11 @@
 ---
 inputs:
 - type: git
-  branch: master
+  branch: multi-repo-1
+  service: ${GIT_REPO}
+  path: .tekton
+- type: git
+  branch: multi-repo-2
   service: ${GIT_REPO}
   path: .tekton
 triggers:
