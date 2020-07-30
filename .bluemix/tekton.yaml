@@ -43,3 +43,6 @@ properties:
 - name: revision
   value: ${REVISION}
   type: text
+- name: region
+  value: ${REGION}
+  type: SINGLE_SELECT
