@@ -53,6 +53,7 @@ services:
           PROD_CLUSTER_NAMESPACE: '{{form.pipeline.parameters.prod-cluster-namespace}}'
           REPOSITORY: '{{services.repo.parameters.source_repo_url}}'
           REVISION: master
+          REGION: {"us-south":true,"us-east":false,"eu-de":false}
         execute: true
   webide:
     service_id: orion
