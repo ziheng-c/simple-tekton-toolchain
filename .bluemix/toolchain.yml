@@ -54,6 +54,7 @@ services:
           REPOSITORY: '{{services.repo.parameters.source_repo_url}}'
           REVISION: master
           REGION: {"us-south":true,"us-east":false,"eu-de":false}
+          TRIGGER_DISABLED: 'true'
         execute: true
   webide:
     service_id: orion
