@@ -18,7 +18,7 @@ triggers:
 - type: manual
   name: Manual Trigger
   eventListener: listener
-  disabled: "true"
+  disabled: ${TRIGGER_DISABLED}
 properties:
 - name: apikey
   value: ${API_KEY}
